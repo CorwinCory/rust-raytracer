@@ -55,7 +55,7 @@ fn main()
         }
         else
         {
-            *pixel = image::Luma([255 as u8]);
+            *pixel = image::Luma([0 as u8]);
         }
     }
     // Save the image as “fractal.png”
