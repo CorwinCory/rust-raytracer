@@ -31,4 +31,9 @@ impl Intersectable for Sphere
 
         return Some(ray.origin() + ray.direction() * lambda);
     }
+
+    /*fn get_intersect_func(& self) -> Box<Fn(Ray) ->  Option<Vector3d> >
+    {
+        //return Box::new( |ray| self.intersect(ray));
+    }*/
 }

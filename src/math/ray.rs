@@ -30,4 +30,6 @@ impl Ray
 pub trait Intersectable
 {
     fn intersect(&self, ray: Ray) -> Option<Vector3d>;
+
+    //fn get_intersect_func(&self) -> Box<Fn(Ray) ->  Option<Vector3d> >;
 }
