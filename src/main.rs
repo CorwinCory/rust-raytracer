@@ -11,7 +11,7 @@ use image::{ImageBuffer, Rgb};
 
 fn main()
 {
-
+    // asd
     let z = Vector3d::zero();
     let e1 = Vector3d {x: 1.0, y: 0.0, z: 0.0};
     let e2 = Vector3d {x: 0.0, y: 1.0, z: 0.0};
@@ -51,6 +51,7 @@ fn main()
 
         if hit
         {
+            println!("hit");
             *pixel = image::Luma([255 as u8]);
         }
         else

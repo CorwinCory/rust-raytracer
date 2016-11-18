@@ -27,7 +27,17 @@ fn check_rays()
     use math::ray::*;
 
     let o = Vector3d::zero();
-    let u = Vector3d {x:0.0, y:0.0, z:0.0};
+    let u = Vector3d {x:0.0, y:0.0, z:1.0};
 
     let ray = Ray::new(o, u);
+    
+    let s = math::sphere::Sphere {center: Vector3d::zero(), radius: 1.0};
+    if let Some(x) = s.intersect(ray)
+    {
+        
+    }
+    else
+    {
+	    assert!(false);
+    }
 }
