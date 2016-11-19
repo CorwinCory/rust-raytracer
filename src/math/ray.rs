@@ -23,7 +23,7 @@ impl Ray
 
     pub fn direction(& self) -> Vector3d
     {
-        return self.origin;
+        return self.direction;
     }
 }
 

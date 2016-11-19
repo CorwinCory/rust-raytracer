@@ -26,18 +26,17 @@ fn check_rays()
     use math::vector3d::*;
     use math::ray::*;
 
-    let o = Vector3d::zero();
-    let u = Vector3d {x:0.0, y:0.0, z:1.0};
+    let o = Vector3d {x:2.0, y:0.0, z:0.0}; ;
+    let d = Vector3d {x:-1.0, y:0.0, z:0.0};
 
-    let ray = Ray::new(o, u);
-    
+    let ray = Ray::new(o, d);
     let s = math::sphere::Sphere {center: Vector3d::zero(), radius: 1.0};
-    if let Some(x) = s.intersect(ray)
-    {
-        
-    }
-    else
-    {
-	    assert!(false);
-    }
+    assert!(s.intersect(ray).is_some());
+}
+
+
+#[test]
+fn check_camera()
+{
+
 }

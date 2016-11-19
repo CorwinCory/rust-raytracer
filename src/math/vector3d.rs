@@ -14,7 +14,12 @@ pub struct Vector3d
 
 pub fn abs(vec: Vector3d) -> f64
 {
-    return (vec.x * vec.x + vec.y * vec.y + vec.z * vec.z).sqrt()
+    return (vec.x * vec.x + vec.y * vec.y + vec.z * vec.z).sqrt();
+}
+
+pub fn abs_sq(vec: Vector3d) -> f64
+{
+    return vec.x * vec.x + vec.y * vec.y + vec.z * vec.z;
 }
 
 impl Vector3d
